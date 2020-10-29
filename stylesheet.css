@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  あmax-width: 1270px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 150px 0 100px 0;
+  background-image: url(top.png);
+  object-fit: cover;
+  object-position:100% 100%;
+  width: 100%;
+  height:auto;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 57px;
+  margin-right: 510px;
+  letter-spacing: 5px;
+  z-index: 100;
+}
+
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(220, 235, 240, 0.8);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 250px;
+  margin-top: -10px ;
+  margin-left: 30px;
+}
+
+.header-left {
+  float: left;
+}
+.header-right{
+  padding: 0 15px;
+}
+
+.new-wrapper{
+  margin:auto;
+  width:70%;
+  background-color: white;
+  /* text-alignをcenterに指定してください */
+  text-align:center;
+  position: relative;
+  color:#555555;
+}
+.new-wrapper h2{
+  border-bottom: 1px solid gray;
+}
+.new-wrapper p{
+
+}
+
+
+ul.header-right li {
+   float: right;
+   width: 100px;          /* メニュー項目の横幅(125px) */
+   display: inline-block; /* ★横並びに配置する */
+   list-style-type: none; /* ★リストの先頭記号を消す */
+   position: relative;    /* ★サブメニュー表示の基準位置にする */
+   transition: all 0.5s;
+
+}
+ul.header-right a {
+   background-color: rgba(255,255,255,0);
+   color: #000033;              /* メニュー項目の文字色(白色) */
+   line-height: 35px;         /* メニュー項目のリンクの高さ(40px) */
+   text-align: center;        /* メインメニューの文字列の配置(中央寄せ) */
+   text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+   font-size: 17px;
+   font-weight: bold;         /* 太字にする */
+   display: block;            /* ★項目内全域をリンク可能にする */
+   transition: all 0.5s;
+
+}
+ul.header-right a:hover {
+   background-color: rgba(255,255,255,0.9);
+}
+ul.header-right ul li a:hover {
+   background-color: rgba(255,255,255,0.9);
+}
+
+ul.header-right ul {
+  background-color: rgba(255,255,255,0.7);
+   margin: 0px;        /* ★サブメニュー外側の余白(ゼロ) */
+   padding: 0px;       /* ★サブメニュー内側の余白(ゼロ) */
+   display: none;      /* ★標準では非表示にする */
+   position: absolute; /* ★絶対配置にする */
+   transition: all 0.5s;
+}
+ul.header-right ul li {
+   width: 100px;               /* サブメニュー1項目の横幅(135px) */
+   border-top: 0px solid gray; /* 項目上側の枠線(ピンク色で1pxの実線) */
+   transition: all 0.5s;
+}
+ul.header-right ul li a {
+   line-height: 35px;   /* サブメニュー1項目の高さ(35px) */
+   text-align: left;    /* 文字列の配置(左寄せ) */
+   padding-left: 5px;   /* 文字列前方の余白(5px) */
+   font-weight: normal; /* 太字にはしない */
+   transition: all 0.5s;
+}
+
+
+.section{
+  margin:auto;
+  width:70%;
+  background-color: white;
+  /* text-alignをcenterに指定してください */
+  text-align:center;
+  position:relative;
+  margin-bottom: 20px;
+}
+.section h2{
+   padding-top: 15px;
+   font-size: 25px;
+   font-weight: normal;
+   text-align: center;
+   color: #5f5d60;
+}
+.sentence{
+  width:80%;
+  display:inline-block;
+  font-size:18px;
+  color:#555555;
+}
+.sentence ul{
+  list-style-type:none;
+  text-align:center;
+  font-size:17px;
+  color:#555555;
+
+}
+
+.menu-icon {
+  color: black;
+  float: right;
+  font-size: 30px;
+  padding: 21px 0;
+  display: none;
+}
+
+
+
+
+nav.globalMenuSp {
+    position:absolute;
+    z-index: 2;
+    top:65px;
+    right: 0;
+    float:right;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-align: center;
+    transform: translateY(-150%);
+    transition: all 0.6s;
+    width: 20%;
+}
+
+nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0px;
+    width: 100%;
+}
+
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+/* 最後はラインを描かない */
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+nav.globalMenuSp ul li a {
+    display: block;
+    color: black;
+    padding: 1em 0;
+    -webkit-text-stroke: 0.5px black;
+
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+    transform: translateY(0%);
+}
+
+.navToggle {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 13px;
+    top: 12px;
+    width: 42px;
+    height: 51px;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+    display:none;
+}
+
+.navToggle span {
+    display: block;
+    position: absolute;    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 3px black;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+
+.navToggle span:nth-child(1) {
+    top: 9px;
+}
+
+.navToggle span:nth-child(2) {
+    top: 18px;
+}
+
+.navToggle span:nth-child(3) {
+    top: 27px;
+}
+
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+footer img {
+  width: 150px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 15px;
+}
+
+footer {
+  background-color: white;
+  padding-top: 10px;
+  border-top: 1px  solid #808080;
+
+  padding-bottom: 1px;
+  padding-left: 40px;
+}
