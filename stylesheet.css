@@ -24,13 +24,16 @@ a {
 }
 
 .top-wrapper {
-  padding: 150px 0 100px 0;
+  padding: 50px 0 50px 0;
   background-image: url(top.png);
   object-fit: cover;
   object-position:100% 100%;
   width: 100%;
-  height:auto;
+  height:80%;
+  max-width: 1320px;
+  margin: 0 auto;
   background-size: cover;
+  background-position: center center;
   color: white;
   text-align: center;
 }
