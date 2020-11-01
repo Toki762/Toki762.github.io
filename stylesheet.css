@@ -184,7 +184,7 @@ ul.header-right ul li a {
 nav.globalMenuSp {
     position:absolute;
     z-index: 2;
-    top:65px;
+    top:50px;
     right: 0;
     float:right;
     background-color: rgba(255, 255, 255, 0.5);
@@ -232,7 +232,7 @@ nav.globalMenuSp.active {
     display: block;
     position: fixed;    /* bodyに対しての絶対位置指定 */
     right: 13px;
-    top: 12px;
+    top: 9px;
     width: 42px;
     height: 51px;
     cursor: pointer;
