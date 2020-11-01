@@ -37,16 +37,21 @@
   }
 
   .top-wrapper {
-    text-align: center;
+    text-align: left;
+    margin: 0 auto;
     width:100%;
     background-position: 500px 0;
+    object-fit: cover;
+    object-position:100% 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: right center;
   }
   .top-wrapper h1{
     margin-right: 0;
     font-size: 70px;
     color:black;
-  　text-shadow:1px 1px white;
-
+    text-shadow:1px 1px 0 white,-1px 1px 0 white,1px -1px 0 white,-1px -1px 0 white;
   }
   .new-wrapper{
     width: 90%;
