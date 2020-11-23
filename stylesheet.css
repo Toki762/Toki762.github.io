@@ -81,14 +81,15 @@ header {
   text-align:center;
   position: relative;
   color:#555555;
+
 }
 .new-wrapper h2{
   border-bottom: 1px solid gray;
 }
-.new-wrapper p{
-
+.new-wrapper img{
+  margin:auto;
+  width:50%;
 }
-
 
 ul.header-right li {
    float: right;
