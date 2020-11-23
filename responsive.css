@@ -93,4 +93,13 @@
   .top-wrapper p {
     font-size: 14px;
   }
+
+  footer{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+
 }
