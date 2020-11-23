@@ -68,8 +68,8 @@
   }
   .new-wrapper img{
     margin:auto;
-    width:50%;
-    max-width: 100%;
+    width:90%;
+    max-width: 150%;
   }
 
   /* header-rightクラスのdisplayをnoneに指定してください */
