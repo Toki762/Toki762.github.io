@@ -81,7 +81,6 @@ header {
   text-align:center;
   position: relative;
   color:#555555;
-
 }
 .new-wrapper h2{
   border-bottom: 1px solid gray;
@@ -89,6 +88,9 @@ header {
 .new-wrapper img{
   margin:auto;
   width:50%;
+}
+.new-wrapper h6{
+  color:white;
 }
 
 ul.header-right li {
